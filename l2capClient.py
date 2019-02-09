@@ -3,7 +3,7 @@ import bluetooth
 
 sock=bluetooth.BluetoothSocket(bluetooth.L2CAP)
 
-bd_addr = "01:23:45:67:89:AB"
+bd_addr = "B8:27:EB:DC:E7:05"
 port = 0x1001
 
 sock.connect((bd_addr, port))
