@@ -15,6 +15,9 @@ Stream webcam video between two raspberry pi's
 ## Install openCV:
 * pip3 install opencv-python
 
+## Install Bluez: (import bluetooth)
+* pip install pybluez
+
 ## Bluetooth Terminal Commands:
 * __List Bluetooth Adaptors:__ hciconfig
 * __Scan for Bluetooth devices:__ hcitool scan
