@@ -11,8 +11,8 @@ Stream webcam video between two raspberry pi's
 pip3 install opencv-python
 
 ## Bluetooth Terminal Commands:
-* List Bluetooth Adaptors: hciconfig
-* Scan for Bluetooth devices: hcitool scan
+* __List Bluetooth Adaptors:__ hciconfig
+* __Scan for Bluetooth devices:__ hcitool scan
 
 
 __*installation source:__ https://www.youtube.com/watch?v=npZ-8Nj1YwY
