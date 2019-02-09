@@ -20,5 +20,9 @@ Stream webcam video between two raspberry pi's
 * __Scan for Bluetooth devices:__ hcitool scan
 * __Make Device Discoverable:__ sudo hciconfig hci0 piscan
 
+### Errors:
+* __*./.local/lib/python3.5/site-packages*__
+  * Delete the numpy and opencv folder and files in __*./local/lib/python[version]/site-packages*__ and reinstall *opencv*
+
 
 __*installation source:__ https://www.youtube.com/watch?v=npZ-8Nj1YwY
