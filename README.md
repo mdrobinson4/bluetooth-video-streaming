@@ -6,6 +6,11 @@ Stream webcam video between two raspberry pi's
 * sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev<br/>
 * sudo apt-get install libxvidcore-dev libx264-dev<br/>
 * sudo apt-get install qt4-dev-tools<br/>
+* sudo apt-get install libatlas-base-dev
+* sudo apt-get install libhdf5-dev
+* sudo apt-get install libhdf5-serial-dev
+* sudo apt-get install libatlas-dev
+
 
 ## Install openCV:
 * pip3 install opencv-python
