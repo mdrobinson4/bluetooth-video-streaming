@@ -8,11 +8,12 @@ Stream webcam video between two raspberry pi's
 * sudo apt-get install qt4-dev-tools<br/>
 
 ## Install openCV:
-pip3 install opencv-python
+* pip3 install opencv-python
 
 ## Bluetooth Terminal Commands:
 * __List Bluetooth Adaptors:__ hciconfig
 * __Scan for Bluetooth devices:__ hcitool scan
+* __Make Device Discoverable:__ sudo hciconfig hci0 piscan
 
 
 __*installation source:__ https://www.youtube.com/watch?v=npZ-8Nj1YwY
