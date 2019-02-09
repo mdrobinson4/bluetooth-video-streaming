@@ -1,16 +1,25 @@
-import bluetooth
+import bluimport bluetooth
 
-server_sock=bluetooth.BluetoothSocket( bluetooth.L2CAP )
+from picamera.array import PiRGBArray
+from picamera import PiCamera
+import time
+import cv2
 
-port = 0x1001
-server_sock.bind(("",port))
-server_sock.listen(1)
+port = 0x1001 # select first bluetooth adapter on server
 
-client_sock,address = server_sock.accept()
-print "Accepted connection from ",address
+serverSocket = openSocket(port) # open server socket
+serverSocket.listen(1)  # listen for the client's connection request
 
-data = client_sock.recv(1024)
+clientSocket, address = serverSocket.accept() # allow the client to connect
+print("Accepted Connection From: ", address)
+
+data = clientSocket.recv(1024)  # get the data from the client
 print "received [%s]" % data
 
-client_sock.close()
-server_sock.close()
+clientSocket.close()  # close the client socket
+serverSocket.close()  # close the server socket
+
+def openSocket(port):
+    serverSocket = bluetooth.BluetoothSocket(bluetooth.L2CAP) # create bluetooth object and set l2cap (udp) as the transportation service
+    serverSocket.bind(("", port)) # bind to default bluetooth adapter on server
+    return serverSocket
