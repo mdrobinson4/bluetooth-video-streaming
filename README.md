@@ -1,5 +1,5 @@
 # bluetooth-video-streaming
-Stream webcam video between two raspberry pi's
+Stream video between two raspberry pi's over bluetooth
 
 ## openCV dependencies:
 * sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev<br/>
